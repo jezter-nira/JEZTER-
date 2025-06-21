@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Soul</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="modeToggle" class="mode-toggle">🌙</button>
+
+  <header>
+    <h1 class="zoom-text">Welcome to The Soul</h1>
+    <p class="zoom-text">A place to feel, share, and grow.</p>
+  </header>
+
+  <main>
+    <section class="post">
+      <h2 class="zoom-text">Post Title 1</h2>
+      <img src="images/nature1.jpg" alt="Nature 1" class="zoom-image" />
+      <p>This is a beautiful post about the soul and nature.</p>
+
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <textarea placeholder="Write your comment..." class="comment-input"></textarea>
+        <button class="comment-submit">Submit</button>
+        <div class="comment-list"></div>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2 class="zoom-text">Post Title 2</h2>
+      <img src="images/nature2.jpg" alt="Nature 2" class="zoom-image" />
+      <p>Another post sharing soulful thoughts and feelings.</p>
+
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <textarea placeholder="Write your comment..." class="comment-input"></textarea>
+        <button class="comment-submit">Submit</button>
+        <div class="comment-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Background Music Player -->
+  <audio id="bgAudio" src="letmedownslowly.mp3" loop></audio>
+
+  <div id="volumeControlContainer">
+    <label for="volumeControl">🔊 Volume</label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.3" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
